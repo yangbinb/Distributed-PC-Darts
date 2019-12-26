@@ -82,6 +82,4 @@ Pytorch 1.1.0
     year={2020},
     url={https://openreview.net/forum?id=BJlS634tPr}
     }
-## Reference
-    If you use my code in your research, please cite my work.
 
