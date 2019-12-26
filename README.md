@@ -73,9 +73,7 @@ Pytorch 1.1.0
 ## Related work
 
 [PC-Darts](https://github.com/yuhuixu1993/PC-DARTS)
-
-## Reference
-
+## Citation
     @inproceedings{
     xu2020pcdarts,
     title={{\{}PC{\}}-{\{}DARTS{\}}: Partial Channel Connections for Memory-Efficient Architecture Search},
@@ -84,3 +82,6 @@ Pytorch 1.1.0
     year={2020},
     url={https://openreview.net/forum?id=BJlS634tPr}
     }
+## Reference
+    If you use my code in your research, please cite my work.
+
