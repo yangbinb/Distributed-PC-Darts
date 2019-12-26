@@ -65,7 +65,7 @@ node1:
     python3 train_distributed.py --master_ip x.x.x.x --port 1234 --local_rank 3 --world_size 4 --gpu 1
 
 
-Replace x.x.x.x with your master ip,for example, ip of node0. You can also change the port with some other unused. Models of every process would be saved normally, you can choose the best one.
+Replace x.x.x.x with your master ip,for example, ip of node0. You can also change the port with some other unused. Every command line start a process, 'world_size' stands for the number of processes,every process use one gpu, after all the processes on every node started, the distributed searching/training would begin. Models in every process would be saved normally, searching/training finished, you can choose the best one.
 
 ## Requirement
 
@@ -79,16 +79,11 @@ Pytorch 1.1.0
 
 ## Reference
 
-@inproceedings{
-
-xu2020pcdarts,
-
-title={{\{}PC{\}}-{\{}DARTS{\}}: Partial Channel Connections for Memory-Efficient Architecture Search},
-author={Yuhui Xu and Lingxi Xie and Xiaopeng Zhang and Xin Chen and Guo-Jun Qi and Qi Tian and Hongkai Xiong},
-booktitle={International Conference on Learning Representations},
-
-year={2020},
-
-url={https://openreview.net/forum?id=BJlS634tPr}
-
-}
+    @inproceedings{
+    xu2020pcdarts,
+    title={{\{}PC{\}}-{\{}DARTS{\}}: Partial Channel Connections for Memory-Efficient Architecture Search},
+    author={Yuhui Xu and Lingxi Xie and Xiaopeng Zhang and Xin Chen and Guo-Jun Qi and Qi Tian and Hongkai Xiong},
+    booktitle={International Conference on Learning Representations},
+    year={2020},
+    url={https://openreview.net/forum?id=BJlS634tPr}
+    }
