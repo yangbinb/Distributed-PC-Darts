@@ -1,5 +1,5 @@
 # Distributed-PC-Darts
-Distributed implementation of [PC-Darts](https://github.com/yuhuixu1993/PC-DARTS).This code is based on the implementation of PC-Darts, it is able to searching and training on multi-nodes&amp;multi-gpu with the method of distributed data parallel. Only the distributed search and retrain on Cifar10 implemented, you can modify it for your own datasets.
+Distributed implementation of [PC-Darts](https://github.com/yuhuixu1993/PC-DARTS).This code is based on the implementation of [PC-Darts](https://github.com/yuhuixu1993/PC-DARTS), it is able to searching and training on multi-nodes&amp;multi-gpus with the method of distributed data parallel. Only the distributed search and retrain on Cifar10 implemented, you can modify it for your own datasets.
 
 ## Usage
 ### Distributed search on CIFAR10
@@ -73,9 +73,7 @@ Pytorch 1.1.0
 ## Related work
 
 [PC-Darts](https://github.com/yuhuixu1993/PC-DARTS)
-
-## Reference
-
+## Citation
     @inproceedings{
     xu2020pcdarts,
     title={{\{}PC{\}}-{\{}DARTS{\}}: Partial Channel Connections for Memory-Efficient Architecture Search},
@@ -84,3 +82,4 @@ Pytorch 1.1.0
     year={2020},
     url={https://openreview.net/forum?id=BJlS634tPr}
     }
+
