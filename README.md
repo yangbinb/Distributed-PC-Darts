@@ -12,35 +12,25 @@ node0:
 
 node0:
 
-'''
     python3 train_search_distributed.py --master_ip 127.0.0.1 --port 12345 --local_rank 1 --world_size 2 --gpu 1
-'''
 
 2.two nodes four gpus
 
 node0:
 
-'''
-python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 0 --world_size 4 --gpu 0
-'''
+    python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 0 --world_size 4 --gpu 0
 
 node0:
 
-'''
-python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 1 --world_size 4 --gpu 1
-'''
+    python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 1 --world_size 4 --gpu 1
 
 node1:
 
-'''
-python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 2 --world_size 4 --gpu 0
-'''
+    python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 2 --world_size 4 --gpu 0
 
 node1:
 
-'''
-python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 3 --world_size 4 --gpu 1
-'''
+    python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 3 --world_size 4 --gpu 1
 
 ### Distributed train on CIFAR10
 
@@ -48,41 +38,34 @@ python3 train_search_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --l
 
 node0:
 
-'''
-python3 train_distributed.py --master_ip 127.0.0.1 --port 12345 --local_rank 0 --world_size 2 --gpu 0
-'''
+    python3 train_distributed.py --master_ip 127.0.0.1 --port 12345 --local_rank 0 --world_size 2 --gpu 0
 
 node0:
 
-'''
+
 python3 train_distributed.py --master_ip 127.0.0.1 --port 12345 --local_rank 1 --world_size 2 --gpu 1
-'''
+
 
 2.two nodes four gpus
 
 node0:
 
-'''
-python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 0 --world_size 4 --gpu 0
-'''
+    python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 0 --world_size 4 --gpu 0
 
-node0:
 
-'''
-python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 1 --world_size 4 --gpu 1
-'''
+node0
+
+    python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 1 --world_size 4 --gpu 1
+
 
 node1:
 
-'''
-python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 2 --world_size 4 --gpu 0
-'''
+    python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 2 --world_size 4 --gpu 0
 
 node1:
+       
+    python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 3 --world_size 4 --gpu 1
 
-'''
-python3 train_distributed.py --master_ip xxx.xxx.xxx.xxx --port 12345 --local_rank 3 --world_size 4 --gpu 1
-'''
 
 xxx.xxx.xxx.xxx is your master ip,for example ip of node0.Models of every process would be saved normally, you can choose the best one.
 
