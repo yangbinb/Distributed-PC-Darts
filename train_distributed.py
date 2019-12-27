@@ -42,7 +42,7 @@ parser.add_argument('--grad_clip', type=float, default=5, help='gradient clippin
 
 parser.add_argument('--world_size', type=int, default=4, help='process number')
 parser.add_argument('--local_rank', type=int, default=0, help='rank number')
-parser.add_argument('--master_ip', type=str, default='10.207.179.107', help='master ip')
+parser.add_argument('--master_ip', type=str, default='127.0.0.1', help='master ip')
 parser.add_argument('--port', type=str, default='1234', help='master port')
 args = parser.parse_args()
 

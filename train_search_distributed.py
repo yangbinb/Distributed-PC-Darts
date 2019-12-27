@@ -45,7 +45,7 @@ parser.add_argument('--arch_weight_decay', type=float, default=1e-3, help='weigh
 
 parser.add_argument('--local_rank', type=int, default=0, help='rank number')
 parser.add_argument('--world_size', type=int, default=4, help='process number')
-parser.add_argument('--master_ip', type=str, default='10.207179.107', help='master ip')
+parser.add_argument('--master_ip', type=str, default='127.0.0.1', help='master ip')
 parser.add_argument('--port', type=str, default='12345', help='master port')
 args = parser.parse_args()
 
